@@ -1,0 +1,39 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs
+*.log
+logs/**/*.log
+
+# Build output
+dist/
+build/
+.vite/
+
+# IDE and editor settings
+.idea/
+.vscode/
+*.swp
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Coverage reports
+coverage/
+
+# Lint and formatting
+.eslintcache
+*.tsbuildinfo
+
+# Local development
+*.local

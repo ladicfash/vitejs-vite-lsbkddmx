@@ -1,0 +1,143 @@
+/* Post Card Container */
+.post-card-modern {
+  background: #444242;
+  border-radius: 16px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 20px 0;
+  padding: 20px;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Gradient Border Effect */
+.post-card-modern::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.post-card-modern:hover::before {
+  opacity: 1;
+}
+
+.post-card-modern:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Post Header */
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.profile-pic {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  margin-right: 16px;
+  object-fit: cover;
+  border: 3px solid #6a11cb;
+}
+
+.username-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.username {
+  font-weight: 700;
+  color: #333;
+  font-size: 16px;
+}
+
+.post-timestamp {
+  color: #aaa;
+  font-size: 12px;
+}
+
+/* Post Content */
+.post-content {
+  margin-bottom: 16px;
+}
+
+.post-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2d2d2d;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.post-snippet {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Post Footer */
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.reaction-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+/* Reaction Buttons */
+.reaction-button {
+  background: #f7f7f7;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.reaction-button:hover {
+  background: #eeeeee;
+  transform: scale(1.05);
+}
+
+.reaction-button.active {
+  background: #6a11cb;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(106, 17, 203, 0.3);
+}
+
+/* Read More Button */
+.read-more-button {
+  background: linear-gradient(135deg, #2ace89, #232525);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.read-more-button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #eaebec, #118b9b);
+}

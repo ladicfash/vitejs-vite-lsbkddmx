@@ -1,0 +1,334 @@
+/* General Reset */
+body {
+  background: url('https://png.pngtree.com/thumb_back/fh260/back_our/20190623/ourmid/pngtree-international-forum-corporate-conference-image_238917.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #f1f1f1;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Links */
+a {
+  color: #42a5f5;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #82cfff;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(41, 42, 45, 0.85); /* Semi-transparent for better visibility */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #f1f1f1;
+}
+
+.navbar a {
+  font-size: 1rem;
+  margin-left: 20px;
+  color: #f1f1f1;
+}
+
+.navbar a:hover {
+  color: #82cfff;
+}
+
+/* Create Post Section */
+.create-post-container {
+  background: rgba(50, 50, 55, 0.9);
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+
+.create-post-container h2 {
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.create-post-container input,
+.create-post-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background: #292a2d;
+  color: #f1f1f1;
+  font-size: 1rem;
+}
+
+.create-post-container input:focus,
+.create-post-container textarea:focus {
+  border-color: #1a73e8;
+  outline: none;
+}
+
+.create-post-container button {
+  background: linear-gradient(90deg, #42a5f5, #1a73e8);
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+  width: 100%;
+}
+
+.create-post-container button:hover {
+  background: linear-gradient(90deg, #1a73e8, #42a5f5);
+  transform: scale(1.05);
+}
+
+.create-post-container button:active {
+  background: #1a73e8;
+  transform: scale(0.98);
+}
+
+/* Main Feed */
+.main-feed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Post Card */
+.post-card {
+  background: rgba(41, 42, 45, 0.9);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.6);
+}
+
+.post-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.post-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #d1d1d1;
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(90deg, #42a5f5, #1a73e8);
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #1a73e8, #42a5f5);
+  transform: scale(1.05);
+}
+
+button:active {
+  background: #1a73e8;
+  transform: scale(0.98);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .navbar h1 {
+    margin-bottom: 10px;
+  }
+
+  .navbar a {
+    margin: 5px 0;
+  }
+
+  .post-card {
+    margin: 20px 10px;
+    padding: 15px;
+  }
+
+  .create-post-container {
+    margin: 20px 10px;
+    padding: 20px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Additional Utility Classes */
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+/* Login Page */
+.login-page {
+  background: rgba(50, 50, 55, 0.9);
+  padding: 30px;
+  margin: 50px auto;
+  max-width: 400px;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.login-page h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+.login-page form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-page input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background: #292a2d;
+  color: #f1f1f1;
+  font-size: 1rem;
+}
+
+.login-page input:focus {
+  border-color: #1a73e8;
+  outline: none;
+}
+
+.login-page button {
+  background: linear-gradient(90deg, #42a5f5, #1a73e8);
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.login-page button:hover {
+  background: linear-gradient(90deg, #1a73e8, #42a5f5);
+  transform: scale(1.05);
+}
+
+.login-page button:active {
+  background: #1a73e8;
+  transform: scale(0.98);
+}
+/* Signup Page */
+.signup-page {
+  background: rgba(50, 50, 55, 0.9);
+  padding: 30px;
+  margin: 50px auto;
+  max-width: 400px;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.signup-page h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+.signup-page form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-page input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background: #292a2d;
+  color: #f1f1f1;
+  font-size: 1rem;
+}
+
+.signup-page input:focus {
+  border-color: #1a73e8;
+  outline: none;
+}
+
+.signup-page button {
+  background: linear-gradient(90deg, #42a5f5, #1a73e8);
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.signup-page button:hover {
+  background: linear-gradient(90deg, #1a73e8, #42a5f5);
+  transform: scale(1.05);
+}
+
+.signup-page button:active {
+  background: #1a73e8;
+  transform: scale(0.98);
+}
+
+.signup-page .error {
+  color: #ff6b6b;
+  margin-bottom: 15px;
+}

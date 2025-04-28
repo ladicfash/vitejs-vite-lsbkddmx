@@ -1,0 +1,77 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #1e1e2f, #252a41);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.profile-photo-upload {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background: rgba(40, 40, 60, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: #fff;
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.profile-photo-upload h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #ffcc00;
+}
+
+.profile-photo-upload input[type="file"] {
+  display: block;
+  margin: 15px auto;
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 6px;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.profile-photo-upload input[type="file"]:hover {
+  background: #444;
+}
+
+.profile-photo-upload button {
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.profile-photo-upload button:disabled {
+  background: #888;
+  cursor: not-allowed;
+}
+
+.profile-photo-upload button:hover:not(:disabled) {
+  transform: scale(1.05);
+  background: #45a049;
+}
+
+.profile-photo-upload button:active:not(:disabled) {
+  transform: scale(0.95);
+}
